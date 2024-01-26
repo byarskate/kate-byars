@@ -1,5 +1,69 @@
+/*
+Colors used:
+Fonts used: Poppins
+h1
+h2
+h3
+h4
+p
+*/
+
+
 main{
     background-color:#ffffff;
+}
+img {
+    width: 100%;
+}
+a {
+    color: #ff7f50;
+    text-decoration: none; /* No underlining */
+  }
+  a:visited { /* visited link */
+    color: #ff7f50;
+  }
+  a:active { /* selected link */
+    color: #994c30;
+  }
+  a:hover {
+    color: #cc6540;
+    text-decoration: underline; /* Underlining when hovering over a link */
+  }
+  a:focus {
+    color: #cc6540;
+    text-decoration: underline;
+  }
+h1{
+    font-family: 'Poppins';
+    font-size:4.5em;
+    text-align: center;
+}
+h2{
+    font-family: 'Poppins';
+    font-size:4em;
+    text-align: center;
+    padding: 25px 0 25px 0;
+}
+h3{
+    font-family: 'Poppins';
+    font-size:3em;
+    text-align: center;
+    padding: 25px 0 25px 0;
+}
+h4{
+    font-family: 'Poppins';
+    font-size:2em;
+    text-align: center;
+    padding: 25px 0 25px 0;
+
+}
+p {
+    font-family: 'Poppins';
+    font-size:16px;
+    line-height: 1.4;
+}
+h1 + p {
+  margin-top: 20px;
 }
 nav{
     width: 100%;
@@ -29,20 +93,6 @@ nav a {
     font-family:'Julius Sans One';
     align-content: right;
   }
-h1{
-    color: #F05593;
-    font-family: 'Poppins';
-    font-size:40pt;
-    text-align: center;
-}
-h2{
-    color: #F05593;
-    font-family: 'Poppins';
-    font-size:2s0pt;
-    text-align: center;
-    padding: 25px 0 25px 0;
-}
-
 .hero{
     background-image: url("background.gif");
     background-size: cover;
@@ -71,4 +121,35 @@ header {
     flex-flow: nowrap;
     display: flex;
     justify-content: flex-start;
+  }
+  .button {
+    display: inline-block; 
+    background-color: #ff7f50;
+    color: #ffffff; 
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #994c30;
+    transition: 0.2s opacity;
+    font-family: "Poppins";
+  }
+  .button:hover {
+    opacity: 0.8; 
+    text-decoration: none;
+  }
+  .button:active{
+    background-color: aqua;
+  }
+  .button.contact {
+    background-color: transparent;
+    color: #ff7f50;
+    text-transform: uppercase;
+    border: 2px solid #ff7f50;
+  }
+  .button.contact:hover {
+    background-color: #ff7f50;
+    color: #ffffff;
+  }
+  .button.contact:active{
+    background-color: aqua;
   }
