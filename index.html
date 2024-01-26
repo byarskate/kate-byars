@@ -12,19 +12,30 @@
 <body>
     <main>
         <header>
-                <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand d-none d-lg-inline-block" href="#">
-                        <img src="img/logo.svg" alt="Kate Byars logo" style="display:100px;max-height:100px;"> </a>
-                    <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="index.html">
-                        <img src="img/logo.svg" alt="logo" style="display: 100px;max-width: 100px;">
-                    <ul class="navbar-nav ms-auto flex-nowrap">
-                        <li class="nav-item"><a href="index.html">WORK</a></li>
-                        <li class="nav-item"><a href="about.html">ABOUT</a></li>
-                        <li class="nav-item"><a href="#contact">CONTACT</a></li>
+            <div class="flex-container">
+                <div>
+                    <a href="index.html">
+                        <picture>
+                            <source srcset="img/logo-mobile.svg" media="(max-width:767px)">
+                            <img src="img/logo-desktop.svg" alt="Envie App image of family." style="display: 300px; max-height:300px;">
+                        </picture>
+                    </a>
+                </div>
+                <div>
+                    <ul class="navigation">
+                        <li>
+                            <a href="#work">Work</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
                     </ul>
-                </nav>
+                </div>
+            </div>
         </header>
-        <!-- ======= Hero Section ======= -->
         <div>
             <h2> Work</h2>
         </div>
@@ -33,8 +44,8 @@
                 <div class="col">
                     <a href="envie-app.html">
                         <picture>
-                        <source srcset="img/envie-app/mobile-1.jpg" media="(max-width:767px)">
-                        <img src="img/envie-app/1-desktop.jpg" alt="Envie App image of family." style="display: 300px; max-height:300px;">
+                            <source srcset="img/envie-app/mobile-1.jpg" media="(max-width:767px)">
+                            <img src="img/envie-app/1-desktop.jpg" alt="Envie App image of family." style="display: 300px; max-height:300px;">
                         </picture>
                     </a>
                 </div>
