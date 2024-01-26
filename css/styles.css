@@ -3,7 +3,6 @@ main{
 }
 nav{
     width: 100%;
-    background-color: #FFE5E1; 
     overflow: auto;
     text-align: right;
 }
@@ -18,10 +17,10 @@ li {
     margin-bottom: 10px;
 }
 li::marker {
-    color:#FFE5E1; 
+    color:#ffffff; 
 }
 nav a {
-    color: #F05593;
+    color: #000000;
     text-decoration: none;
     width: 100px;
     display:inline-block;
@@ -29,11 +28,6 @@ nav a {
     font-size: 18px;
     font-family:'Julius Sans One';
     align-content: right;
-  }
-  .logo img{
-    position: absolute;
-    margin-top: 15px;
-    margin-left:10px;
   }
 h1{
     color: #F05593;
@@ -48,9 +42,7 @@ h2{
     text-align: center;
     padding: 25px 0 25px 0;
 }
-.navbar-brand{
-    padding: 0 0 0 50px;
-}
+
 .hero{
     background-image: url("background.gif");
     background-size: cover;
@@ -62,19 +54,21 @@ div{
     height:auto;
     padding:1em;
   }
-  .column {
-
-  }
 section {
     padding:5%;
     margin:5px;
 }
 header {
     width:100%;
-    float:center;
-    text-align:center;
 }
-.row {
+  .navigation {
+    list-style-type: none;
+  }
+  .navigation li{
+    margin: 0 10px 0 0;
+  }
+.flex-container {
+    flex-flow: nowrap;
     display: flex;
-    justify-content: center;
-}
+    justify-content: flex-start;
+  }
