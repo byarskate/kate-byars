@@ -14,73 +14,74 @@
     <body>
         <main>
             <header>
-                <div class="flex-container">
-                    <div>
-                        <a href="index.html">
-                            <picture>
-                                <source srcset="img/logo-mobile.svg" media="(max-width:767px)">
-                                <img src="img/logo-desktop.svg" alt="Envie App image of family." style="display: 300px; max-height:300px;">
-                            </picture>
-                        </a>
-                    </div>
-                    <div>
-                        <ul class="navigation">
-                            <li>
-                                <a href="#work">Work</a>
-                            </li>
-                            <li>
-                                <a href="about.html">About</a>
-                            </li>
-                            <li>
-                                <a href="#contact">Contact</a>
-                            </li>
-                        </ul>
+                <div id="menu" class="flex-container">
+                    <div class="row">
+                        <div class="col">
+                            <a id="logo" href="index.html">Kate Byars</a>
+                        </div>
+                        <div class="col">
+                            <ul class="navigation">
+                                <li>
+                                    <a href="#work">Work</a>
+                                </li>
+                                <li>
+                                    <a href="about.html">About</a>
+                                </li>
+                                <li>
+                                    <a href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </header>
+            </header>          
                 <div>
-                    <div>
-                        <h1>About</h1>
-                    </div>
-                    <div>
-                        <div>
-                            <picture>
-                                <source srcset="img/bio-mobile.jpg" media="(max-width:767px)">
-                                <img src="img/bio-desktop.jpg" alt="Envie App image of family." style="display: 300px; max-height:300px;">
-                            </picture>
-                        </div>
-                            <div class="row">
-                                <div class="col">
-                                    <h2>My Story</h2>
-                                    <p>I am a UX Product Manager, who is an outside the box thinker with a strong entrepreneurial spirit. I have experience in taking a company from initial concept to product and in implementing successful marketing that leads to profitability. I am excited to use my broad knowledge of small business to help companies bring high ROI products to market.</p>
-                                    <a style="text-decoration:none" href="files/kate-byars-resume.pdf" target="_blank">
-                                        <picture><p>Download My Resume</p></picture>
-                                    </a>
-                                </div>
-                                <div class="col">
-                                    <h2>Skills and Tools</h2>
-                                    <div> <!--Skills and Tools Wrapper-->
-                                        <div>
-                                            <h3>Relevant Skills</h3>
-                                            <ul>Concept Development</ul>
-                                            <ul>User Research</ul>
-                                            <ul>Wireframes</ul>
-                                            <ul>Prototypes</ul>
-                                            <ul>Interaction and Visual Design</ul>
-                                                
-                                        </div> 
-                                        <div>
-                                            <h3>Tools I Use</h3>
-                                            <ul>Figma</ul>
-                                            <ul>Lyssna</ul>    
-                                            <ul>Canva</ul>
-                                        </div>  
-                                    </div> 
-                                </div>
+                    <div class="flex-container">
+                        <div class="row">
+                            <div class="col-4">
+                            </div>
+                            <div class="col-4">
+                                <picture>
+                                    <source srcset="img/bio-mobile.jpg" media="(max-width:767px)">
+                                    <img src="img/bio-desktop.jpg" alt="Envie App image of family." style="display: 300px; max-height:300px;">
+                                </picture>
+                            </div>
+                            <div class="col-4">
                             </div>
                         </div>
                     </div>
-            <footer>
+                        <div id="mystory" class="row">
+                            <div class="col">
+                                <h2>My Story</h2>
+                                <p>I am a UX Product Manager, who is an outside the box thinker with a strong entrepreneurial spirit. I have experience in taking a company from initial concept to product and in implementing successful marketing that leads to profitability. I am excited to use my broad knowledge of small business to help companies bring high ROI products to market.</p>
+                                <a style="text-decoration:none" href="files/kate-byars-resume.pdf" target="_blank">
+                                    <a class="button"><p>Download My Resume</p></a>
+                                </a>
+                            </div>
+                            <div id="skillsandtools" class="col">
+                                <h2>Skills and Tools</h2>
+                                <div> <!--Skills and Tools Wrapper-->
+                                    <div>
+                                        <h3>Relevant Skills</h3>
+                                        <ul>Concept Development</ul>
+                                        <ul>User Research</ul>
+                                        <ul>Wireframes</ul>
+                                        <ul>Prototypes</ul>
+                                        <ul>Interaction and Visual Design</ul>
+                                            
+                                    </div> 
+                                    <div>
+                                        <h3>Tools I Use</h3>
+                                        <ul>Figma</ul>
+                                        <ul>Lyssna</ul>    
+                                        <ul>Canva</ul>
+                                    </div>  
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <footer id="contact">
                 <div class="container text-center">
                     <h2>Get in Touch</h2>
                     <p>
@@ -89,20 +90,11 @@
                 </div>
                 <div class="container text-center">
                     <p>Prefer sending an email?</p>
-                    <a href="mailto:byars.katheriner@gmail.com">Email me</a>
+                    <a class="button contact" href="mailto:byars.katheriner@gmail.com">Email me</a>
                 </div>
                 <div class="container text-center">
-                    <a href="LINKEDIN-URL" target="_blank">
-                        <img src="http://via.placeholder.com/32x32">
-                    </a>
-                    <a href="TWITTER-URL" target="_blank">
-                        <img src="http://via.placeholder.com/32x32">
-                    </a>
-                    <a href="ANOTHER-SOCIAL-LINK">
-                        <img src="http://via.placeholder.com/32x32">
-                    </a>
-                    <a href="ANOTHER-SOCIAL-LINK">
-                        <img src="http://via.placeholder.com/32x32">
+                    <a href="https://www.linkedin.com/in/katebyars/">
+                        <img class="linkedin" src="img/social/icons8-linkedin.svg">
                     </a>
                 </div>
                 <div class="container text-center">
