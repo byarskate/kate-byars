@@ -1,6 +1,8 @@
 /*
 Colors used:
-Fonts used: Poppins
+Fonts used: 
+Poppins
+Nunito Sans
 h1
 h2
 h3
@@ -8,12 +10,26 @@ h4
 p
 */
 
-
 main{
     background-color:#ffffff;
+    width: 100%;
+}
+body{
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 img {
     width: 100%;
+}
+.left-hero{
+  margin-left: -15px;
+}
+.hero {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: block;
 }
 a {
     color: #ff7f50;
@@ -27,7 +43,7 @@ a {
   }
   a:hover {
     color: #cc6540;
-    text-decoration: underline; /* Underlining when hovering over a link */
+    text-decoration: none; /* Underlining when hovering over a link */
   }
   a:focus {
     color: #cc6540;
@@ -65,11 +81,6 @@ p {
 h1 + p {
   margin-top: 20px;
 }
-nav{
-    width: 100%;
-    overflow: auto;
-    text-align: right;
-}
 ul {
     padding: 0 0 25px 0;
     margin: 0 50px 0 0;
@@ -80,25 +91,18 @@ li {
     float: left;
     margin-bottom: 10px;
 }
-li::marker {
-    color:#ffffff; 
-}
-nav a {
+ul a {
     color: #000000;
     text-decoration: none;
     width: 100px;
-    display:inline-block;
     padding: 50px 0 0 0;
-    font-size: 18px;
-    font-family:'Julius Sans One';
-    align-content: right;
+    margin: 0 50px 0 0;
+    font:inherit;
+    text-transform: uppercase;
+    font-size: .75em;
+    text-decoration: none;
+    color: #000000;
   }
-.hero{
-    background-image: url("background.gif");
-    background-size: cover;
-    padding: 50px 0 100px 0;
-    background-color:#FFE5E1;
-}
 div{
     width:100%;
     height:auto;
@@ -110,17 +114,36 @@ section {
 }
 header {
     width:100%;
+    margin: 0 0 100px 0;
+    padding: 0;
 }
-  .navigation {
+.navigation {
     list-style-type: none;
   }
-  .navigation li{
-    margin: 0 10px 0 0;
+#logo{
+  font-family: 'Nunito Sans', sans-serif;
+  color: #db00e7;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+#menu{
+    height: 70.5325px;
+    position: fixed;
+    top: 0;
   }
 .flex-container {
     flex-flow: nowrap;
     display: flex;
     justify-content: flex-start;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  row{
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
   .button {
     display: inline-block; 
