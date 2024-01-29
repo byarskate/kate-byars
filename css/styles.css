@@ -52,6 +52,7 @@ margin-top: 20px;
 }
 img {
     width: 100%;
+    height: 100%;
 }
 #hero {
   margin-top: 50px;
@@ -143,6 +144,19 @@ a:hover {
 a:focus {
   color: #cc6540;
   text-decoration: none;
+}
+.cv-button {
+  text-decoration: none;
+  display: inline-block; 
+  background-color: #ff7f50;
+  color: white; 
+  font-size: 1em;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
+  transition: 0.2s opacity;
+  font-family: "Nunito Sans", sans-serif;
 }
 .button {
   text-decoration: none;
