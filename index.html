@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>Kate Byars Portfolio</title>
 </head>
@@ -34,10 +37,10 @@
         <div class="hero">
             <div class="container container-hero">
                 <div class="row hero-row">
-                    <div class="col-12" >
+                    <div class="col-12 col-lg-6" >
                         <picture class="bio-image-index">
                             <source srcset="img/bio-mobile.jpg" media="(max-width:767px)">
-                            <img src="img/bio-desktop.jpg" alt="Kate Byars bio image">
+                            <img src="img/bio-mobile.jpg" alt="Kate Byars bio image">
                         </picture>
                     </div> 
                     <!-- <div class="col">
@@ -47,7 +50,7 @@
                             <li>this is a list item</li>
                         </ul>
                     </div> -->
-                    <div class="col-12 hero-intro-text">
+                    <div class="col-12 col-lg-6 hero-intro-text">
                         <p class="hero-intro-style">Hey Friend.</p>
                         <h2 class="hero-intro-style"> I'm Kate Byars.</h2>
                         <h3 class="hero-intro-style">I'm a UX Designer, certified in Product Design and Frontend Development.</h3>
@@ -56,20 +59,21 @@
                 </div>
             </div>
         </div>
-        <div class="case-study-teasers">
-            <div class="center" id="work-section-header"> 
-                <h2>Work</h2>
+        <div class="center work-section-header">
+            <div class="col work-section-header-image">
+                <picture>
+                    <source srcset="img/citrus-tech.jpg" media="(max-width:767px)">
+                    <img src="img/citrus-tech.jpg" alt="Envie App image of family.">
+                </picture>
             </div>
+            <div class="col work-section-header-text"> 
+                <h3>Before You Scroll Any Further</h3>
+                <h2>Check Out Some Recent Work</h2>
+            </div>
+        </div>
+        <div class="case-study-teasers">
             <div id="work" class="flex-container container-main container justify-content-center">
                 <div class="row">
-                    <div class="col col-md-6 col-lg-7">
-                        <a href="envie-app.html">
-                            <picture class="teaser">
-                                <source srcset="img/envie-app/mobile-1.jpg" media="(max-width:767px)">
-                                <img src="img/envie-app/1-desktop.jpg" alt="Envie App image of family.">
-                            </picture>
-                        </a>
-                    </div>
                     <div class="col col-md-6 col-lg-5">
                         <a href="envie-app.html">
                             <h3>Envie App</h3>
@@ -78,6 +82,14 @@
                         <h4>Tools &amp; Skills</h4>
                         <p>Figma, Wireframing, Prototyping, UX Research</p>
                         <a class="button" href="envie-app.html">Read more</a>
+                    </div>
+                    <div class="col col-md-6 col-lg-7">
+                        <a href="envie-app.html">
+                            <picture class="teaser">
+                                <source srcset="img/envie-app/mobile-1.jpg" media="(max-width:767px)">
+                                <img src="img/envie-app/1-desktop.jpg" alt="Envie App image of family.">
+                            </picture>
+                        </a>
                     </div>
                 </div>
             </div>  
