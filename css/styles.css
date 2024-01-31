@@ -5,6 +5,7 @@ Poppins
 Nunito Sans
 Roboto
 Poiret One
+Glegoo
 */
 /* Layout Styling */
 .flex-container {
@@ -55,14 +56,15 @@ header {
 h1{
   font-family: 'Nunito Sans';
   font-size: 3em;
+  color: #EF540F;
 }
 h2{
   font-family: 'Nunito Sans';
-  color: #db00e7;
+  color: #EF540F;
   font-size:2em;
 }
 h3{
-  font-family: 'Roboto';
+  font-family: 'Nunito Sans;
   font-size: 1.5em;
 }
 h4{
@@ -151,6 +153,50 @@ nav > ul > a {
   max-width: 250px;
   text-align: center;
 }
+.work-section-header{
+  position:relative;
+  top: 300px;
+  z-index: 0;
+}
+.work-section-header-text {
+  position: relative;
+  top: -100px;
+  z-index: 0;
+  background-color: #f042f9;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 25px;
+}
+.work-section-header-image{
+  position: relative;
+  z-index: 9;
+}
+div.work-section-header-text h2{
+  padding-bottom: 25px;
+  color: white;
+  margin: 0;
+}
+div.work-section-header-text h3{
+  margin: 0;
+  font-family: "Nunito Sans";
+  color: white;
+  padding-top:25px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: 700px;
+  font-size: 1em;
+}
+div.work-section-header img{
+  max-width: 65%;
+  position: relative;
+
+}
+div.case-study-teasers h3{
+  font-size: 1.5em;
+  color: #f042f9;
+  font-weight: 700px;
+  text-transform: uppercase;
+}
 .center {
   text-align: center;
 }
@@ -172,10 +218,65 @@ nav > ul > a {
   display: block;
   margin: 0 auto;
 }
+.about-hero{
+  position: relative;
+  top: 0;
+}
+.about-bio-image{
+  display: inline-block;
+  position:relative;
+  width: 100%;
+  top: 0;
+}
+.about-my-story{
+  position: relative;
+  max-width: 85%;
+  top: -200px;
+  left:10%;
+  background-color: white;
+}
+.name-circle img{
+  z-index: 4;
+  position: absolute;
+  left: 60%;
+  top: 380px; 
+  max-width: 150px;
+}
+.my-story-text{
+  padding-top: 100px;
+  margin-left: 25px;
+  margin-right: 15px
+}
+.my-story-text h2 {
+  font-size: 3em;
+  text-align: center;
+}
+p.my-story {
+  line-height: 1.5;
+  font-size: 1.4em;
+  margin-top: 25px;
+}
+h2.skills-and-tools-about{
+  text-transform: uppercase;
+  color: #db00e7;
+  font-size: 1.5em;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
 .hero-row{
   width: 100%;
   margin: 0;
   padding: 0;
+}
+ul.skills-and-tools-list{
+  list-style-type: none;
+  font-family: "Roboto";
+  font-size: 1.5em;
+}
+div.skills-and-tools-block{
+  border-bottom: 1px solid #b6b4b4;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 .hero-intro-text{
   padding-top: 5%;
@@ -190,6 +291,7 @@ nav > ul > a {
   text-align: left;
 }
 .case-study-teasers {
+  background-color:   white;
   position: relative;
   top: 250px;
 }
@@ -207,7 +309,7 @@ p.hero-intro-style {
   color: #ff7f50;
 }
 h2.hero-intro-style {
-  font-family: "Poiret One";
+  font-family: "Glegoo";
   color: rgb(98, 98, 98);
   font-size: 3em;
   font-weight: 700;
@@ -218,7 +320,7 @@ h3.hero-intro-style{
   font-family: "Nunito Sans";
   color: rgb(98, 98, 98);
   font-size: 1.25em;
-  font-weight: 700;
+  font-weight: 400;
   padding-bottom: 5%;
   padding-left:15%;
 }
@@ -226,11 +328,31 @@ h3.hero-intro-style{
   position: relative;
   top: 250px;
 }
-.hero-button {
+.about-cv-button{
+  position: relative;
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block; 
   background-color: #ff7f50;
+  color: white; 
+  font-size: .75em;
+  letter-spacing: .15em;
+  margin: 0;
+  padding: 25px;
+  transition: 0.2s opacity;
+  font-family: "Nunito Sans", sans-serif;
+}
+.about-cv-button a{
+  margin: 0;
+}
+.about-hero-bg img{
+  max-width: 100%;
+}
+.hero-button {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block; 
+  background-color: #db00e7 ;
   color: white; 
   font-size: .75em;
   letter-spacing: .15em;
@@ -243,7 +365,7 @@ h3.hero-intro-style{
 .cv-button {
   text-decoration: none;
   display: inline-block; 
-  background-color: #ff7f50;
+  background-color: #db00e7;
   color: white; 
   font-size: 1em;
   font-weight: 400;
