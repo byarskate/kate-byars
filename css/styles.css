@@ -38,6 +38,10 @@ main{
 }
 .case-study-teasers col img{
   width: 100%;
+  object-fit: fill;
+}
+.case-study-teasers-row a{
+  text-align: center;
 }
 body{  
   width: 100%;
@@ -83,6 +87,10 @@ h1 + p {
 }
 img.linkedin {
   max-width: 30px;
+  margin-top: 10px;
+}
+.copyright{
+  margin-top: 10px;
 }
 a {
   color: black;
@@ -227,7 +235,7 @@ div.case-study-teasers h2{
   padding: 0 15px 15px 15px;
   text-align: center;
 }
-.tools-and-skills-teaser li {
+.tools-and-skills-teaser {
   font-family: "Nunito Sans";
   font-size: 1em;
   color:#f042f9;
@@ -241,6 +249,7 @@ div.case-study-teasers h2{
 }
 .teaser img {
   width: 100%;
+  max-width: 100%;
   height: 100%;
   object-fit: fill;
 }
@@ -278,7 +287,7 @@ div.case-study-teasers h2{
   z-index: 4;
   position: absolute;
   left: 60%;
-  top: 380px; 
+  top: 300px; 
   max-width: 150px;
 }
 .my-story-text{
@@ -366,6 +375,7 @@ h3.hero-intro-style{
 .footer {
   position: relative;
   top: 250px;
+  margin-top: 25px;
 }
 .about-cv-button{
   position: relative;
