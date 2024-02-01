@@ -21,8 +21,8 @@ Glegoo
   margin: 0;
 }
 .container-main{
-  padding: 0 15px;
-  max-width: 1200px;
+  /* padding: 0 25px 0 25px;
+  max-width: 1200px; */
   margin: 0 auto;
 }
 .container {
@@ -36,15 +36,14 @@ main{
 * {
   box-sizing: border-box;
 }
+.case-study-teasers col img{
+  width: 100%;
+}
 body{  
   width: 100%;
   margin: 0px;
   padding: 0px;
   font-size: 16px;
-}
-div{
-  margin-top:15px;
-  margin-bottom: 15px;
 }
 header {
   z-index: 10;
@@ -64,13 +63,15 @@ h2{
   font-size:2em;
 }
 h3{
-  font-family: 'Nunito Sans;
-  font-size: 1.5em;
+  font-family: 'Nunito Sans';
+  color: #EF540F;
+  font-size: 400px;
 }
 h4{
   font-family: 'Nunito Sans';
-  font-size: -.5em;
+  font-size: 1em;
   text-transform: uppercase;
+  color:#EF540F;
 }
 p{
   font-family: 'Nunito Sans';
@@ -155,7 +156,7 @@ nav > ul > a {
 }
 .work-section-header{
   position:relative;
-  top: 300px;
+  top: 350px;
   z-index: 0;
 }
 .work-section-header-text {
@@ -172,7 +173,8 @@ nav > ul > a {
   z-index: 9;
 }
 div.work-section-header-text h2{
-  padding-bottom: 25px;
+  font-size: 3em;
+  padding: 0 25px 25px 25px;
   color: white;
   margin: 0;
 }
@@ -186,16 +188,53 @@ div.work-section-header-text h3{
   font-weight: 700px;
   font-size: 1em;
 }
+div.hero {
+  margin-bottom: 50px;
+}
 div.work-section-header img{
   max-width: 65%;
   position: relative;
 
 }
 div.case-study-teasers h3{
+  font-family: "Glegoo";
+  font-size: 2.5em;
+  color: #f042f9;
+  font-weight: 700px;
+  padding-top: 15px;
+  text-align: center;
+}
+div.case-study-teasers p{
+  font-family: "Glegoo";
+  font-size: 1.25em;
+  color: black;
+  font-weight: 700px;
+  padding: 0 15px 0 15px;
+  text-align: center;
+}
+div.case-study-teasers h4{
+  font-family: "Nunito Sans";
   font-size: 1.5em;
   color: #f042f9;
   font-weight: 700px;
-  text-transform: uppercase;
+  padding: 0 15px 0 15px;
+  text-align: center;
+}
+div.case-study-teasers h2{
+  font-family: "Roboto";
+  font-size: 1.25em;
+  color: black;
+  padding: 0 15px 15px 15px;
+  text-align: center;
+}
+.tools-and-skills-teaser li {
+  font-family: "Nunito Sans";
+  font-size: 1em;
+  color:#f042f9;
+  font-weight: 700px;
+  padding: 0 15px 0 15px;
+  text-align: center;
+  list-style-type: none;
 }
 .center {
   text-align: center;
@@ -377,14 +416,14 @@ h3.hero-intro-style{
 }
 .button {
   text-decoration: none;
+  text-transform: uppercase;
   display: inline-block; 
-  background-color: #ff7f50;
+  background-color: #db00e7 ;
   color: white; 
-  font-size: 1em;
-  font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #994c30;
+  font-size: .75em;
+  letter-spacing: .15em;
+  margin: 0 auto 0 auto;
+  padding: 25px;
   transition: 0.2s opacity;
   font-family: "Nunito Sans", sans-serif;
 }
