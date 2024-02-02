@@ -1,11 +1,14 @@
 /*
 Colors used:
+Orange - #E55D4C
+Light Blue - #D3E5E5
+Mustard - #E8BA5C
+Off black - #333333
+Peach - #F7CACB
 Fonts used: 
-Poppins
-Nunito Sans
-Roboto
-Poiret One
-Glegoo
+font-family: 'Archivo Narrow', sans-serif;
+font-family: 'Julius Sans One', sans-serif;
+font-family: 'Source Sans 3', sans-serif;
 */
 /* Layout Styling */
 .flex-container {
@@ -57,19 +60,25 @@ header {
   width: 100%;
 }
 h1{
-  font-family: 'Nunito Sans';
-  font-size: 3em;
-  color: #EF540F;
+  font-family: 'Julius Sans One';
+  font-size: 42pt;
+  color: #333333;
+  text-indent: -4px;
+  font-weight: 200;
 }
 h2{
-  font-family: 'Nunito Sans';
+  font-family: 'Archivo Narrow';
   color: #EF540F;
-  font-size:2em;
+  font-size:14pt;
+  font-weight: 200;
+  letter-spacing: 500;
+  text-transform: uppercase;
 }
 h3{
-  font-family: 'Nunito Sans';
-  color: #EF540F;
-  font-size: 400px;
+  font-family: 'Archivo Narrow';
+  color: #E55D4C;
+  font-size: 18px;
+  font-weight: 400;
 }
 h4{
   font-family: 'Nunito Sans';
@@ -78,8 +87,8 @@ h4{
   color:#EF540F;
 }
 p{
-  font-family: 'Nunito Sans';
-  font-size: 1em;
+  font-family: 'Source Sans 3';
+  font-size: 18px;
   line-height: 1.4;
 }
 h1 + p {
@@ -151,14 +160,14 @@ nav > ul > a {
   margin: 0 auto;
 }
 .logo-div {
-  padding-top: 10px;
+  padding-top: 20px;
 }
 .logo {
   font-family: 'Nunito Sans', sans-serif;
-  color: #db00e7;
+  color: #E55D4C;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.1em;
+  font-size: 1.5em;
   max-width: 250px;
   text-align: center;
 }
@@ -188,7 +197,6 @@ div.work-section-header-text h2{
 }
 div.work-section-header-text h3{
   margin: 0;
-  font-family: "Nunito Sans";
   color: white;
   padding-top:25px;
   padding-bottom: 5px;
@@ -205,7 +213,6 @@ div.work-section-header img{
 
 }
 div.case-study-teasers h3{
-  font-family: "Glegoo";
   font-size: 2.5em;
   color: #f042f9;
   font-weight: 700px;
@@ -213,7 +220,6 @@ div.case-study-teasers h3{
   text-align: center;
 }
 div.case-study-teasers p{
-  font-family: "Glegoo";
   font-size: 1.25em;
   color: black;
   font-weight: 700px;
@@ -221,7 +227,6 @@ div.case-study-teasers p{
   text-align: center;
 }
 div.case-study-teasers h4{
-  font-family: "Nunito Sans";
   font-size: 1.5em;
   color: #f042f9;
   font-weight: 700px;
@@ -229,14 +234,12 @@ div.case-study-teasers h4{
   text-align: center;
 }
 div.case-study-teasers h2{
-  font-family: "Roboto";
   font-size: 1.25em;
   color: black;
   padding: 0 15px 15px 15px;
   text-align: center;
 }
 .tools-and-skills-teaser {
-  font-family: "Nunito Sans";
   font-size: 1em;
   color:#f042f9;
   font-weight: 700px;
@@ -287,7 +290,7 @@ div.case-study-teasers h2{
   z-index: 4;
   position: absolute;
   left: 60%;
-  top: 300px; 
+  top: 250px; 
   max-width: 150px;
 }
 .my-story-text{
@@ -318,7 +321,6 @@ h2.skills-and-tools-about{
 }
 ul.skills-and-tools-list{
   list-style-type: none;
-  font-family: "Roboto";
   font-size: 1.5em;
 }
 div.skills-and-tools-block{
@@ -328,6 +330,7 @@ div.skills-and-tools-block{
 }
 .hero-intro-text{
   padding-top: 5%;
+  padding-left: 25px;
   background-color: white;
   position: absolute;
   width: 80%;
@@ -356,16 +359,14 @@ p.hero-intro-style {
   text-transform: uppercase;
   color: #ff7f50;
 }
-h2.hero-intro-style {
-  font-family: "Glegoo";
+/* h2.hero-intro-style {
   color: rgb(98, 98, 98);
   font-size: 3em;
   font-weight: 700;
   padding-bottom: 5%;
-  padding-left:15%;
-}
+  padding-left:15%; */
+/* } */
 h3.hero-intro-style{
-  font-family: "Nunito Sans";
   color: rgb(98, 98, 98);
   font-size: 1.25em;
   font-weight: 400;
@@ -389,7 +390,6 @@ h3.hero-intro-style{
   margin: 0;
   padding: 25px;
   transition: 0.2s opacity;
-  font-family: "Nunito Sans", sans-serif;
 }
 .about-cv-button a{
   margin: 0;
@@ -401,15 +401,13 @@ h3.hero-intro-style{
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block; 
-  background-color: #db00e7 ;
+  background-color: #E55D4C ;
   color: white; 
   font-size: .75em;
   letter-spacing: .15em;
-  margin: 0 0 50px 5px;
+  margin: 10px 0 100px 0;
   padding: 25px;
   transition: 0.2s opacity;
-  font-family: "Nunito Sans", sans-serif;
-  margin-left:15%;
 }
 .cv-button {
   text-decoration: none;
@@ -422,20 +420,19 @@ h3.hero-intro-style{
   border-radius: 3px;
   border-bottom: 2px solid #994c30;
   transition: 0.2s opacity;
-  font-family: "Nunito Sans", sans-serif;
 }
 .button {
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block; 
-  background-color: #db00e7 ;
-  color: white; 
-  font-size: .75em;
-  letter-spacing: .15em;
+  background-color: #E55D4C;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 110;
   margin: 0 auto 0 auto;
   padding: 25px;
   transition: 0.2s opacity;
-  font-family: "Nunito Sans", sans-serif;
 }
 .button:hover {
   opacity: 0.8; 
