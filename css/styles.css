@@ -16,35 +16,32 @@ font-family: 'Source Sans 3', sans-serif;
   flex-flow: nowrap;
   display: flex;
   justify-content: flex-start;
-  padding: 0;
-  margin: 15px;
   }
 .container-hero{
   width: 100%;
   margin: 0;
 }
 .container-main{
-  /* padding: 0 25px 0 25px;
-  max-width: 1200px; */
   margin: 0 auto;
+  width: 100%;
 }
-.container {
-  overflow-y: scroll;
-}
+
 main{
   width: 100%;
   padding-top: 100px;
-  margin: o 0 0 0;
+  margin: 0 0 0 0;
 }
 * {
   box-sizing: border-box;
 }
-.case-study-teasers col img{
+.case-study-teasers-row {
+  display: block;
   width: 100%;
-  object-fit: fill;
 }
-.case-study-teasers-row a{
-  text-align: center;
+.case-study-teasers-row picture{
+  display: block;
+  overflow: hidden;
+  max-width: 100%;
 }
 body{  
   width: 100%;
@@ -53,8 +50,6 @@ body{
   font-size: 16px;
 }
 header {
-  z-index: 10;
-  position: fixed;
   background-color: white;
   text-align: center;
   width: 100%;
@@ -136,19 +131,8 @@ nav > ul > a {
   font-family: 'Nunito Sans, sans';
   color: #4d4c4c;
 }
-#intro-text{
-  position: relative;
-  top: 25%;
-  right: 25px;
-}
 #work .row { 
   padding-bottom: 25px; 
-  border-bottom: 1px solid #c1c0c0; 
-}
-#case-study-index div{
-  position: relative;
-  top: 70px;
-  margin: 10px;
 }
 #mystory{
   text-align: left;
@@ -171,23 +155,14 @@ nav > ul > a {
   max-width: 250px;
   text-align: center;
 }
-.work-section-header{
-  position:relative;
-  top: 350px;
-  z-index: 0;
-}
 .work-section-header-text {
-  position: relative;
-  top: -100px;
-  z-index: 0;
   background-color: #f042f9;
   width: 100%;
   padding-top: 100px;
   padding-bottom: 25px;
 }
 .work-section-header-image{
-  position: relative;
-  z-index: 9;
+  margin: 0 auto -55px;
 }
 div.work-section-header-text h2{
   font-size: 3em;
@@ -204,13 +179,8 @@ div.work-section-header-text h3{
   font-weight: 700px;
   font-size: 1em;
 }
-div.hero {
-  margin-bottom: 50px;
-}
 div.work-section-header img{
   max-width: 65%;
-  position: relative;
-
 }
 div.case-study-teasers h3{
   font-size: 2.5em;
@@ -218,6 +188,13 @@ div.case-study-teasers h3{
   font-weight: 700px;
   padding-top: 15px;
   text-align: center;
+}
+.teaser{
+  width: calc(100%);
+  display: block;
+  max-width: 100%;
+  margin-left: -70px;
+  object-fit: fill;
 }
 div.case-study-teasers p{
   font-size: 1.25em;
@@ -251,16 +228,13 @@ div.case-study-teasers h2{
   text-align: center;
 }
 .teaser img {
-  width: 100%;
-  max-width: 100%;
-  height: 100%;
-  object-fit: fill;
+ 
 }
-.case-study-header-image img{
+/* .case-study-header-image img{
   width: 100%;
   height: 100%;
   object-fit: fill;
-}
+} */
 .case-study-header-intro{
   padding: 50px;
 }
@@ -270,7 +244,6 @@ div.case-study-teasers h2{
   margin: 0 auto;
 }
 .about-hero{
-  position: relative;
   top: 0;
 }
 .about-bio-image{
@@ -329,29 +302,26 @@ div.skills-and-tools-block{
   padding-top: 25px;
 }
 .hero-intro-text{
+  width: 85%;
+  margin: -55px auto;
   padding-top: 5%;
   padding-left: 25px;
   background-color: white;
-  position: absolute;
-  width: 80%;
-  top: 80%;
-  right: 15%;
 }
 .hero-intro-style {
   padding-left: 10%;
   text-align: left;
 }
+.hero{
+  margin-bottom: 55px;
+}
 .case-study-teasers {
   background-color:   white;
-  position: relative;
   top: 250px;
+  margin-right: 0;
+  margin-left:0;
 }
-.hero {
-  position: relative;
-  padding: 0 0 0 0;
-  margin: 0 0 0 0;
-  width: 100%;  
-}
+
 p.hero-intro-style {
   padding-top:5%;
   padding-left:15%;
@@ -374,9 +344,7 @@ h3.hero-intro-style{
   padding-left:15%;
 }
 .footer {
-  position: relative;
-  top: 250px;
-  margin-top: 25px;
+  margin-top: 100px;
 }
 .about-cv-button{
   position: relative;
