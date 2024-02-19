@@ -12,7 +12,7 @@ font-family: 'Source Sans 3', sans-serif;
 */
 /* Layout Styling */
 .flex-container {
-  width: 100%;
+  min-width: fit-content;
   flex-flow: nowrap;
   display: flex;
   justify-content: flex-start;
@@ -21,11 +21,17 @@ font-family: 'Source Sans 3', sans-serif;
   width: 100%;
   margin: 0;
 }
-.container-main{
-  margin: 0 auto;
-  width: 100%;
+.row {
+ padding-right: 0 ;
+ padding-left:0;
 }
-
+.col-12 {
+  padding-right: 0 ;
+  padding-left:0;
+}
+.container{
+  min-width: fit-content;
+}
 main{
   width: 100%;
   padding-top: 100px;
@@ -36,17 +42,20 @@ main{
 }
 .case-study-teasers-row {
   display: block;
-  width: 100%;
+  min-width: 100%;
+}
+.case-study-teasers-row col{
+  min-width: fit-content;
 }
 .case-study-teasers-row picture{
   display: block;
   overflow: hidden;
-  max-width: 100%;
+  min-width: fit-content;
+  margin: 0;
+  padding: 0;
 }
 body{  
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
+  min-width: fit-content;
   font-size: 16px;
 }
 header {
@@ -131,8 +140,9 @@ nav > ul > a {
   font-family: 'Nunito Sans, sans';
   color: #4d4c4c;
 }
-#work .row { 
+#work { 
   padding-bottom: 25px; 
+  width: 100%;
 }
 #mystory{
   text-align: left;
@@ -170,7 +180,7 @@ div.work-section-header-text h2{
   color: white;
   margin: 0;
 }
-div.work-section-header-text h3{
+#work h3{
   margin: 0;
   color: white;
   padding-top:25px;
@@ -182,7 +192,7 @@ div.work-section-header-text h3{
 div.work-section-header img{
   max-width: 65%;
 }
-div.case-study-teasers h3{
+div.case-study-teasers-row h3 {
   font-size: 2.5em;
   color: #f042f9;
   font-weight: 700px;
@@ -190,27 +200,29 @@ div.case-study-teasers h3{
   text-align: center;
 }
 .teaser{
-  width: calc(100%);
   display: block;
-  max-width: 100%;
-  margin-left: -70px;
+  min-width: fit-content;
   object-fit: fill;
 }
-div.case-study-teasers p{
+div.case-study-teasers-row picture{
+  min-width: fit-content;
+  object-fit: fill;
+}
+div.case-study-teasers-row p{
   font-size: 1.25em;
   color: black;
   font-weight: 700px;
   padding: 0 15px 0 15px;
   text-align: center;
 }
-div.case-study-teasers h4{
+div.case-study-teasers-row h4{
   font-size: 1.5em;
   color: #f042f9;
   font-weight: 700px;
   padding: 0 15px 0 15px;
   text-align: center;
 }
-div.case-study-teasers h2{
+div.case-study-teasers-row h2{
   font-size: 1.25em;
   color: black;
   padding: 0 15px 15px 15px;
@@ -227,8 +239,9 @@ div.case-study-teasers h2{
 .center {
   text-align: center;
 }
-.teaser img {
- 
+.case-study-teasers {
+  min-width: fit-content;
+  margin: 0 auto;
 }
 /* .case-study-header-image img{
   width: 100%;
